@@ -1,33 +1,115 @@
-.App {
+.card:hover {
+  border-color: #999;
+  box-shadow: 1px 2px #999;
+}
+.App{
+ background-color:  #4d4d4d;
+}
+.card {
+  margin-bottom: 1em;
+}
+.container{
+  background-color: white;
+  max-width: 1500px;
+}
+.price {
+  color: seagreen;
+  font-weight: bold;    
+}
+
+.price:before {
+  content: '$';
+}
+
+.shirt {
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+.stepper-input{
+  display: flex;
+  display: -webkit-flex;
+  color: #222;
+  max-width: 120px;
+  margin: 10px auto;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+header {
+  margin-bottom: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.shirtCart {
+  width: 25px;
+}
+
+.add {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.checkout {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add:hover {
+  background-color: deepskyblue;
+  border-color: deepskyblue;
 }
+
+tr {
+  text-align: center;
+}
+
+.modal-header {
+  border-bottom: 0px;
+}
+
+.counter {
+  font-size: 0.6em;
+  margin-left: 1em;
+  font-weight: bold;
+}
+
+
+.increment,
+.decrement{
+      height: 24px;
+      width: 24px;
+      border: 1px solid #222;
+      text-align: center;
+      box-sizing: border-box;
+      border-radius: 50%;
+      text-decoration: none;
+      color: #222;
+      font-size: 24px;
+      line-height: 22px;
+      display: inline-block;
+      cursor: pointer;             
+  }
+
+.decrement:hover, 
+.increment:hover {
+  color: green;  
+}
+
+.decrement:active, 
+.increment:active {    
+  background-color: green; 
+  color: white;  
+}
+
+
+.quantity{
+      height: 24px;
+      width: 48px;
+      text-align: center;
+      margin: 0 12px;
+      border-radius: 2px;
+      border: 1px solid #222;
+      
+  }
